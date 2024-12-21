@@ -50,7 +50,7 @@ class Kettle(SmartDevice):
     def boil(self):
         time.sleep(10)
         self.status = "готов"
-        messagebox.showinfo("Уведомление", "Чайник скипел. Приятного чаепития!")
+        messagebox.showinfo("Уведомление", "Чайник вскипел. Приятного чаепития!")
 
     def schedule_boil(self, delay_minutes):
         Thread(target=self.delayed_boil, args=(delay_minutes,)).start()
